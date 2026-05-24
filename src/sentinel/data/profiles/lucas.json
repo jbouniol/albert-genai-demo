@@ -1,0 +1,1994 @@
+{
+  "profile_id": "lucas",
+  "profile_name": "Lucas",
+  "age": 15,
+  "persona_label": "Potential grooming victim (new adult-coded contact)",
+  "days": [
+    {
+      "date": "2026-05-03",
+      "total_screen_time_min": 125,
+      "sessions_per_app": {
+        "Discord": 14,
+        "Snapchat": 5,
+        "Instagram": 11,
+        "TikTok": 10,
+        "iMessage": 10
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 8,
+          "avg_response_time_sec": 673.7,
+          "hour_distribution": {
+            "21": 2,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "13": 1,
+            "12": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 793.8,
+          "hour_distribution": {
+            "19": 1,
+            "17": 1,
+            "20": 1,
+            "14": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Discord",
+          "message_count": 8,
+          "avg_response_time_sec": 641.1,
+          "hour_distribution": {
+            "20": 2,
+            "19": 2,
+            "17": 1,
+            "22": 1,
+            "9": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 740.7,
+          "hour_distribution": {
+            "19": 1,
+            "21": 1,
+            "20": 1,
+            "22": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 172.5,
+          "hour_distribution": {
+            "21": 3,
+            "8": 1,
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 6,
+      "sleep_hours": 8.16
+    },
+    {
+      "date": "2026-05-04",
+      "total_screen_time_min": 131,
+      "sessions_per_app": {
+        "Discord": 17,
+        "Snapchat": 4,
+        "Instagram": 11,
+        "TikTok": 8,
+        "iMessage": 9
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 380.2,
+          "hour_distribution": {
+            "21": 1,
+            "18": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 686.7,
+          "hour_distribution": {
+            "19": 1,
+            "18": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Discord",
+          "message_count": 4,
+          "avg_response_time_sec": 530.8,
+          "hour_distribution": {
+            "18": 1,
+            "17": 1,
+            "15": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 6,
+          "avg_response_time_sec": 747.9,
+          "hour_distribution": {
+            "20": 1,
+            "21": 2,
+            "19": 1,
+            "22": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 672.8,
+          "hour_distribution": {
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "9": 1,
+            "11": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 5,
+      "sleep_hours": 7.79
+    },
+    {
+      "date": "2026-05-05",
+      "total_screen_time_min": 140,
+      "sessions_per_app": {
+        "Discord": 12,
+        "Snapchat": 6,
+        "Instagram": 8,
+        "TikTok": 8,
+        "iMessage": 11
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 82.9,
+          "hour_distribution": {
+            "21": 2,
+            "20": 1,
+            "9": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 7,
+          "avg_response_time_sec": 679.6,
+          "hour_distribution": {
+            "18": 2,
+            "20": 2,
+            "22": 1,
+            "14": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 292.7,
+          "hour_distribution": {
+            "19": 1,
+            "20": 1,
+            "21": 1,
+            "11": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 6,
+          "avg_response_time_sec": 680.0,
+          "hour_distribution": {
+            "21": 1,
+            "19": 1,
+            "17": 2,
+            "16": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 4,
+          "avg_response_time_sec": 461.2,
+          "hour_distribution": {
+            "21": 1,
+            "19": 1,
+            "14": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 4,
+          "avg_response_time_sec": 815.7,
+          "hour_distribution": {
+            "21": 1,
+            "20": 1,
+            "14": 1,
+            "10": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 16,
+      "sleep_hours": 7.97
+    },
+    {
+      "date": "2026-05-06",
+      "total_screen_time_min": 153,
+      "sessions_per_app": {
+        "Discord": 13,
+        "Snapchat": 4,
+        "Instagram": 8,
+        "TikTok": 8,
+        "iMessage": 9
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 9,
+          "avg_response_time_sec": 47.1,
+          "hour_distribution": {
+            "22": 3,
+            "21": 1,
+            "19": 1,
+            "18": 1,
+            "14": 1,
+            "11": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 4,
+          "avg_response_time_sec": 160.8,
+          "hour_distribution": {
+            "18": 1,
+            "19": 1,
+            "16": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 876.0,
+          "hour_distribution": {
+            "18": 1,
+            "21": 2,
+            "8": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 6,
+          "avg_response_time_sec": 132.4,
+          "hour_distribution": {
+            "18": 1,
+            "20": 1,
+            "17": 1,
+            "21": 1,
+            "15": 2
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 736.8,
+          "hour_distribution": {
+            "18": 2,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 613.4,
+          "hour_distribution": {
+            "20": 2,
+            "14": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 20,
+      "sleep_hours": 7.34
+    },
+    {
+      "date": "2026-05-07",
+      "total_screen_time_min": 154,
+      "sessions_per_app": {
+        "Discord": 17,
+        "Snapchat": 5,
+        "Instagram": 9,
+        "TikTok": 6,
+        "iMessage": 11
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 6,
+          "avg_response_time_sec": 116.6,
+          "hour_distribution": {
+            "19": 2,
+            "18": 2,
+            "16": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 455.9,
+          "hour_distribution": {
+            "20": 1,
+            "19": 1,
+            "16": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 6,
+          "avg_response_time_sec": 271.5,
+          "hour_distribution": {
+            "17": 2,
+            "18": 1,
+            "19": 1,
+            "12": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 6,
+          "avg_response_time_sec": 120.1,
+          "hour_distribution": {
+            "18": 1,
+            "17": 1,
+            "21": 2,
+            "9": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 558.5,
+          "hour_distribution": {
+            "19": 1,
+            "18": 1,
+            "17": 1,
+            "14": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 6,
+          "avg_response_time_sec": 150.2,
+          "hour_distribution": {
+            "19": 1,
+            "17": 2,
+            "21": 1,
+            "9": 1,
+            "8": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 22,
+      "sleep_hours": 7.55
+    },
+    {
+      "date": "2026-05-08",
+      "total_screen_time_min": 154,
+      "sessions_per_app": {
+        "Discord": 13,
+        "Snapchat": 5,
+        "Instagram": 9,
+        "TikTok": 8,
+        "iMessage": 11
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 6,
+          "avg_response_time_sec": 162.7,
+          "hour_distribution": {
+            "18": 1,
+            "22": 2,
+            "19": 1,
+            "14": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 511.1,
+          "hour_distribution": {
+            "20": 1,
+            "17": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 7,
+          "avg_response_time_sec": 710.0,
+          "hour_distribution": {
+            "17": 2,
+            "19": 2,
+            "15": 1,
+            "13": 2
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 575.9,
+          "hour_distribution": {
+            "19": 1,
+            "18": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 7,
+          "avg_response_time_sec": 663.5,
+          "hour_distribution": {
+            "17": 1,
+            "20": 2,
+            "21": 1,
+            "8": 2,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 599.4,
+          "hour_distribution": {
+            "20": 2,
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 22,
+      "sleep_hours": 7.96
+    },
+    {
+      "date": "2026-05-09",
+      "total_screen_time_min": 170,
+      "sessions_per_app": {
+        "Discord": 14,
+        "Snapchat": 4,
+        "Instagram": 10,
+        "TikTok": 9,
+        "iMessage": 10
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 8,
+          "avg_response_time_sec": 70.3,
+          "hour_distribution": {
+            "20": 2,
+            "18": 1,
+            "22": 1,
+            "19": 1,
+            "10": 1,
+            "17": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Instagram",
+          "message_count": 6,
+          "avg_response_time_sec": 645.9,
+          "hour_distribution": {
+            "19": 2,
+            "20": 1,
+            "18": 1,
+            "9": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 665.4,
+          "hour_distribution": {
+            "18": 1,
+            "17": 1,
+            "8": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 734.2,
+          "hour_distribution": {
+            "17": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 169.1,
+          "hour_distribution": {
+            "21": 1,
+            "20": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 6,
+          "avg_response_time_sec": 840.0,
+          "hour_distribution": {
+            "20": 1,
+            "17": 1,
+            "18": 2,
+            "13": 1,
+            "11": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 32,
+      "sleep_hours": 7.47
+    },
+    {
+      "date": "2026-05-10",
+      "total_screen_time_min": 161,
+      "sessions_per_app": {
+        "Discord": 12,
+        "Snapchat": 4,
+        "Instagram": 12,
+        "TikTok": 6,
+        "iMessage": 12
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 30,
+          "avg_response_time_sec": 131.4,
+          "hour_distribution": {
+            "19": 4,
+            "23": 6,
+            "21": 4,
+            "20": 2,
+            "22": 5,
+            "9": 1,
+            "17": 1,
+            "11": 2,
+            "16": 2,
+            "14": 1,
+            "12": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 6,
+          "avg_response_time_sec": 558.9,
+          "hour_distribution": {
+            "21": 1,
+            "18": 1,
+            "20": 2,
+            "14": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 378.0,
+          "hour_distribution": {
+            "19": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Discord",
+          "message_count": 4,
+          "avg_response_time_sec": 528.5,
+          "hour_distribution": {
+            "17": 2,
+            "22": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 649.2,
+          "hour_distribution": {
+            "18": 1,
+            "21": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 422.2,
+          "hour_distribution": {
+            "19": 1,
+            "20": 1,
+            "16": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 34,
+      "sleep_hours": 7.43
+    },
+    {
+      "date": "2026-05-11",
+      "total_screen_time_min": 162,
+      "sessions_per_app": {
+        "Discord": 17,
+        "Snapchat": 6,
+        "Instagram": 11,
+        "TikTok": 9,
+        "iMessage": 12
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 20,
+          "avg_response_time_sec": 95.6,
+          "hour_distribution": {
+            "23": 4,
+            "21": 7,
+            "20": 2,
+            "22": 1,
+            "10": 1,
+            "8": 1,
+            "16": 1,
+            "17": 1,
+            "14": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 468.8,
+          "hour_distribution": {
+            "17": 2,
+            "18": 1,
+            "16": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "iMessage",
+          "message_count": 5,
+          "avg_response_time_sec": 705.6,
+          "hour_distribution": {
+            "21": 1,
+            "19": 2,
+            "15": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 537.6,
+          "hour_distribution": {
+            "19": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 618.6,
+          "hour_distribution": {
+            "21": 2,
+            "18": 1,
+            "15": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 158.5,
+          "hour_distribution": {
+            "17": 1,
+            "11": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 34,
+      "sleep_hours": 7.08
+    },
+    {
+      "date": "2026-05-12",
+      "total_screen_time_min": 167,
+      "sessions_per_app": {
+        "Discord": 12,
+        "Snapchat": 8,
+        "Instagram": 10,
+        "TikTok": 10,
+        "iMessage": 9
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Discord",
+          "message_count": 21,
+          "avg_response_time_sec": 51.8,
+          "hour_distribution": {
+            "20": 3,
+            "22": 4,
+            "23": 4,
+            "21": 3,
+            "15": 1,
+            "17": 1,
+            "16": 2,
+            "14": 2,
+            "8": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 2,
+          "avg_response_time_sec": 424.2,
+          "hour_distribution": {
+            "17": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 407.7,
+          "hour_distribution": {
+            "18": 1,
+            "20": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 507.0,
+          "hour_distribution": {
+            "17": 2,
+            "16": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 665.8,
+          "hour_distribution": {
+            "18": 2,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 628.4,
+          "hour_distribution": {
+            "17": 3,
+            "10": 1,
+            "11": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 45,
+      "sleep_hours": 7.27
+    },
+    {
+      "date": "2026-05-13",
+      "total_screen_time_min": 171,
+      "sessions_per_app": {
+        "Discord": 7,
+        "Snapchat": 25,
+        "Instagram": 9,
+        "TikTok": 5,
+        "iMessage": 8
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 50,
+          "avg_response_time_sec": 94.9,
+          "hour_distribution": {
+            "23": 13,
+            "0": 6,
+            "21": 8,
+            "22": 8,
+            "19": 1,
+            "14": 1,
+            "9": 1,
+            "17": 1,
+            "16": 4,
+            "12": 1,
+            "10": 2,
+            "13": 2,
+            "15": 2
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 4,
+          "avg_response_time_sec": 646.9,
+          "hour_distribution": {
+            "21": 1,
+            "18": 1,
+            "16": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 619.0,
+          "hour_distribution": {
+            "21": 1,
+            "19": 1,
+            "15": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Discord",
+          "message_count": 4,
+          "avg_response_time_sec": 600.8,
+          "hour_distribution": {
+            "19": 2,
+            "10": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 5,
+          "avg_response_time_sec": 556.4,
+          "hour_distribution": {
+            "18": 2,
+            "19": 1,
+            "13": 2
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 6,
+          "avg_response_time_sec": 132.0,
+          "hour_distribution": {
+            "19": 1,
+            "20": 1,
+            "18": 1,
+            "21": 1,
+            "13": 1,
+            "15": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 53,
+      "sleep_hours": 6.87
+    },
+    {
+      "date": "2026-05-14",
+      "total_screen_time_min": 170,
+      "sessions_per_app": {
+        "Discord": 7,
+        "Snapchat": 23,
+        "Instagram": 8,
+        "TikTok": 5,
+        "iMessage": 6
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 60,
+          "avg_response_time_sec": 81.6,
+          "hour_distribution": {
+            "23": 13,
+            "21": 9,
+            "22": 11,
+            "0": 9,
+            "15": 4,
+            "13": 3,
+            "14": 2,
+            "20": 1,
+            "19": 3,
+            "18": 1,
+            "9": 2,
+            "12": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 445.6,
+          "hour_distribution": {
+            "17": 1,
+            "21": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 606.3,
+          "hour_distribution": {
+            "20": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 5,
+          "avg_response_time_sec": 311.8,
+          "hour_distribution": {
+            "19": 1,
+            "21": 1,
+            "17": 1,
+            "13": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 739.5,
+          "hour_distribution": {
+            "17": 2,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 278.4,
+          "hour_distribution": {
+            "19": 1,
+            "16": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 52,
+      "sleep_hours": 6.71
+    },
+    {
+      "date": "2026-05-15",
+      "total_screen_time_min": 175,
+      "sessions_per_app": {
+        "Discord": 5,
+        "Snapchat": 19,
+        "Instagram": 9,
+        "TikTok": 6,
+        "iMessage": 10
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 55,
+          "avg_response_time_sec": 97.3,
+          "hour_distribution": {
+            "0": 6,
+            "22": 14,
+            "23": 9,
+            "21": 9,
+            "14": 1,
+            "19": 2,
+            "15": 1,
+            "9": 2,
+            "18": 4,
+            "8": 1,
+            "16": 2,
+            "20": 2,
+            "13": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 4,
+          "avg_response_time_sec": 672.6,
+          "hour_distribution": {
+            "17": 2,
+            "11": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 754.3,
+          "hour_distribution": {
+            "21": 1,
+            "8": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 291.3,
+          "hour_distribution": {
+            "19": 1,
+            "17": 1,
+            "10": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 324.9,
+          "hour_distribution": {
+            "20": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 1,
+          "avg_response_time_sec": 791.5,
+          "hour_distribution": {
+            "10": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 59,
+      "sleep_hours": 6.6
+    },
+    {
+      "date": "2026-05-16",
+      "total_screen_time_min": 191,
+      "sessions_per_app": {
+        "Discord": 4,
+        "Snapchat": 24,
+        "Instagram": 7,
+        "TikTok": 8,
+        "iMessage": 9
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 41,
+          "avg_response_time_sec": 45.5,
+          "hour_distribution": {
+            "23": 11,
+            "0": 6,
+            "21": 7,
+            "22": 4,
+            "13": 1,
+            "10": 3,
+            "19": 2,
+            "20": 2,
+            "11": 1,
+            "15": 2,
+            "16": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 4,
+          "avg_response_time_sec": 162.3,
+          "hour_distribution": {
+            "21": 1,
+            "20": 1,
+            "9": 1,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 828.6,
+          "hour_distribution": {
+            "20": 2,
+            "17": 1,
+            "22": 1,
+            "8": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 630.6,
+          "hour_distribution": {
+            "19": 1,
+            "21": 1,
+            "12": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 271.8,
+          "hour_distribution": {
+            "17": 1,
+            "18": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 5,
+          "avg_response_time_sec": 370.5,
+          "hour_distribution": {
+            "21": 1,
+            "18": 1,
+            "17": 1,
+            "9": 1,
+            "16": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 61,
+      "sleep_hours": 6.91
+    },
+    {
+      "date": "2026-05-17",
+      "total_screen_time_min": 187,
+      "sessions_per_app": {
+        "Discord": 4,
+        "Snapchat": 24,
+        "Instagram": 10,
+        "TikTok": 5,
+        "iMessage": 8
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 73,
+          "avg_response_time_sec": 50.6,
+          "hour_distribution": {
+            "0": 16,
+            "1": 11,
+            "23": 19,
+            "22": 5,
+            "15": 2,
+            "17": 5,
+            "20": 3,
+            "13": 3,
+            "12": 3,
+            "8": 1,
+            "18": 2,
+            "16": 1,
+            "21": 1,
+            "19": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 232.9,
+          "hour_distribution": {
+            "21": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 786.3,
+          "hour_distribution": {
+            "19": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 567.2,
+          "hour_distribution": {
+            "18": 1,
+            "21": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 354.6,
+          "hour_distribution": {
+            "19": 2,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 1,
+          "avg_response_time_sec": 866.9,
+          "hour_distribution": {
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 69,
+      "sleep_hours": 6.47
+    },
+    {
+      "date": "2026-05-18",
+      "total_screen_time_min": 196,
+      "sessions_per_app": {
+        "Discord": 4,
+        "Snapchat": 25,
+        "Instagram": 9,
+        "TikTok": 8,
+        "iMessage": 7
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 61,
+          "avg_response_time_sec": 106.6,
+          "hour_distribution": {
+            "23": 12,
+            "1": 10,
+            "22": 11,
+            "0": 9,
+            "13": 2,
+            "17": 1,
+            "21": 1,
+            "18": 2,
+            "9": 2,
+            "20": 5,
+            "16": 2,
+            "19": 1,
+            "11": 1,
+            "15": 2
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 436.0,
+          "hour_distribution": {
+            "17": 2,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 1,
+          "avg_response_time_sec": 153.5,
+          "hour_distribution": {
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 124.2,
+          "hour_distribution": {
+            "20": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 610.7,
+          "hour_distribution": {
+            "21": 2,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 265.0,
+          "hour_distribution": {
+            "17": 1,
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 75,
+      "sleep_hours": 6.55
+    },
+    {
+      "date": "2026-05-19",
+      "total_screen_time_min": 176,
+      "sessions_per_app": {
+        "Discord": 7,
+        "Snapchat": 24,
+        "Instagram": 8,
+        "TikTok": 7,
+        "iMessage": 8
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 66,
+          "avg_response_time_sec": 48.9,
+          "hour_distribution": {
+            "23": 11,
+            "0": 10,
+            "22": 15,
+            "1": 10,
+            "20": 3,
+            "21": 4,
+            "19": 3,
+            "8": 1,
+            "13": 2,
+            "12": 2,
+            "18": 3,
+            "17": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 5,
+          "avg_response_time_sec": 151.4,
+          "hour_distribution": {
+            "20": 1,
+            "18": 1,
+            "19": 1,
+            "12": 1,
+            "10": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 2,
+          "avg_response_time_sec": 348.7,
+          "hour_distribution": {
+            "17": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 862.7,
+          "hour_distribution": {
+            "21": 1,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 871.5,
+          "hour_distribution": {
+            "21": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 673.3,
+          "hour_distribution": {
+            "19": 1,
+            "21": 1,
+            "11": 1,
+            "13": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 75,
+      "sleep_hours": 6.77
+    },
+    {
+      "date": "2026-05-20",
+      "total_screen_time_min": 212,
+      "sessions_per_app": {
+        "Discord": 7,
+        "Snapchat": 19,
+        "Instagram": 6,
+        "TikTok": 7,
+        "iMessage": 8
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 69,
+          "avg_response_time_sec": 99.2,
+          "hour_distribution": {
+            "23": 14,
+            "22": 10,
+            "0": 12,
+            "1": 12,
+            "16": 1,
+            "8": 5,
+            "10": 1,
+            "20": 1,
+            "13": 2,
+            "12": 1,
+            "19": 1,
+            "11": 3,
+            "14": 1,
+            "18": 2,
+            "15": 1,
+            "21": 2
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 360.3,
+          "hour_distribution": {
+            "17": 1,
+            "18": 1,
+            "8": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 652.5,
+          "hour_distribution": {
+            "20": 2,
+            "13": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Discord",
+          "message_count": 1,
+          "avg_response_time_sec": 516.6,
+          "hour_distribution": {
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 2,
+          "avg_response_time_sec": 760.7,
+          "hour_distribution": {
+            "18": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 1,
+          "avg_response_time_sec": 195.9,
+          "hour_distribution": {
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 82,
+      "sleep_hours": 6.43
+    },
+    {
+      "date": "2026-05-21",
+      "total_screen_time_min": 202,
+      "sessions_per_app": {
+        "Discord": 6,
+        "Snapchat": 24,
+        "Instagram": 8,
+        "TikTok": 5,
+        "iMessage": 8
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 80,
+          "avg_response_time_sec": 137.5,
+          "hour_distribution": {
+            "2": 16,
+            "0": 13,
+            "23": 16,
+            "1": 11,
+            "8": 3,
+            "19": 2,
+            "9": 5,
+            "17": 2,
+            "18": 1,
+            "14": 2,
+            "15": 1,
+            "11": 2,
+            "13": 1,
+            "20": 1,
+            "22": 1,
+            "10": 1,
+            "12": 2
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 1,
+          "avg_response_time_sec": 898.0,
+          "hour_distribution": {
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 161.6,
+          "hour_distribution": {
+            "18": 1,
+            "19": 1,
+            "11": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 3,
+          "avg_response_time_sec": 383.7,
+          "hour_distribution": {
+            "21": 1,
+            "18": 1,
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "iMessage",
+          "message_count": 3,
+          "avg_response_time_sec": 631.0,
+          "hour_distribution": {
+            "20": 2,
+            "16": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 321.4,
+          "hour_distribution": {
+            "20": 1,
+            "19": 1,
+            "22": 1,
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 81,
+      "sleep_hours": 6.28
+    },
+    {
+      "date": "2026-05-22",
+      "total_screen_time_min": 202,
+      "sessions_per_app": {
+        "Discord": 8,
+        "Snapchat": 25,
+        "Instagram": 7,
+        "TikTok": 6,
+        "iMessage": 7
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 96,
+          "avg_response_time_sec": 173.4,
+          "hour_distribution": {
+            "0": 14,
+            "23": 21,
+            "1": 17,
+            "2": 15,
+            "17": 2,
+            "16": 3,
+            "12": 4,
+            "20": 1,
+            "21": 4,
+            "8": 2,
+            "18": 2,
+            "10": 4,
+            "13": 2,
+            "11": 1,
+            "9": 2,
+            "22": 1,
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 2,
+          "avg_response_time_sec": 228.8,
+          "hour_distribution": {
+            "20": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Discord",
+          "message_count": 4,
+          "avg_response_time_sec": 708.7,
+          "hour_distribution": {
+            "21": 1,
+            "20": 1,
+            "8": 1,
+            "12": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "iMessage",
+          "message_count": 1,
+          "avg_response_time_sec": 195.8,
+          "hour_distribution": {
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Instagram",
+          "message_count": 1,
+          "avg_response_time_sec": 464.2,
+          "hour_distribution": {
+            "15": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "Discord",
+          "message_count": 3,
+          "avg_response_time_sec": 440.0,
+          "hour_distribution": {
+            "21": 1,
+            "20": 1,
+            "9": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 89,
+      "sleep_hours": 5.97
+    },
+    {
+      "date": "2026-05-23",
+      "total_screen_time_min": 203,
+      "sessions_per_app": {
+        "Discord": 4,
+        "Snapchat": 16,
+        "Instagram": 8,
+        "TikTok": 7,
+        "iMessage": 10
+      },
+      "contacts_interactions": [
+        {
+          "contact_id": "6b66ebcf961e",
+          "contact_label": "Jake_M_15",
+          "app": "Snapchat",
+          "message_count": 102,
+          "avg_response_time_sec": 112.1,
+          "hour_distribution": {
+            "2": 20,
+            "23": 25,
+            "0": 16,
+            "1": 10,
+            "13": 2,
+            "10": 4,
+            "17": 4,
+            "11": 4,
+            "14": 2,
+            "9": 2,
+            "12": 1,
+            "16": 2,
+            "21": 1,
+            "15": 2,
+            "18": 1,
+            "20": 1,
+            "8": 2,
+            "19": 2,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "3be279a6a51b",
+          "contact_label": "Friend_1",
+          "app": "Discord",
+          "message_count": 2,
+          "avg_response_time_sec": 465.1,
+          "hour_distribution": {
+            "19": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "b3544e36af09",
+          "contact_label": "Friend_2",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 156.2,
+          "hour_distribution": {
+            "17": 1,
+            "20": 1,
+            "16": 1,
+            "14": 1
+          }
+        },
+        {
+          "contact_id": "abebfd76205a",
+          "contact_label": "Friend_3",
+          "app": "Instagram",
+          "message_count": 4,
+          "avg_response_time_sec": 897.5,
+          "hour_distribution": {
+            "18": 1,
+            "20": 1,
+            "12": 1,
+            "22": 1
+          }
+        },
+        {
+          "contact_id": "751ac5a7678e",
+          "contact_label": "Friend_4",
+          "app": "Discord",
+          "message_count": 1,
+          "avg_response_time_sec": 472.4,
+          "hour_distribution": {
+            "9": 1
+          }
+        },
+        {
+          "contact_id": "1106babcbe3e",
+          "contact_label": "Friend_5",
+          "app": "iMessage",
+          "message_count": 1,
+          "avg_response_time_sec": 619.8,
+          "hour_distribution": {
+            "12": 1
+          }
+        }
+      ],
+      "nighttime_activity_min": 92,
+      "sleep_hours": 5.67
+    }
+  ]
+}
