@@ -13,6 +13,7 @@ import os
 os.environ.setdefault("SENTINEL_QUIET", "1")
 
 import html  # noqa: E402
+import inspect  # noqa: E402
 import sys  # noqa: E402
 import time  # noqa: E402
 from dataclasses import dataclass  # noqa: E402
@@ -99,6 +100,44 @@ st.session_state.setdefault("cached", False)
 st.session_state.setdefault("last_elapsed", None)
 
 
+def _supports_kw(function: Any, name: str) -> bool:
+    try:
+        signature = inspect.signature(function)
+    except (TypeError, ValueError):
+        return False
+    return name in signature.parameters
+
+
+def _html(body: str) -> None:
+    if hasattr(st, "html"):
+        st.html(body)
+        return
+    st.markdown(body, unsafe_allow_html=True)
+
+
+def _stretch_button(label: str, *, type_: str = "secondary", icon: str | None = None) -> bool:
+    kwargs: dict[str, Any] = {"type": type_}
+    if icon and _supports_kw(st.button, "icon"):
+        kwargs["icon"] = icon
+    if _supports_kw(st.button, "width"):
+        kwargs["width"] = "stretch"
+    else:
+        kwargs["use_container_width"] = True
+    return st.button(label, **kwargs)
+
+
+def _plotly_chart(fig: go.Figure) -> None:
+    kwargs: dict[str, Any] = {
+        "theme": None,
+        "config": {"displayModeBar": False, "responsive": True},
+    }
+    if _supports_kw(st.plotly_chart, "width"):
+        kwargs["width"] = "stretch"
+    else:
+        kwargs["use_container_width"] = True
+    st.plotly_chart(fig, **kwargs)
+
+
 @dataclass(frozen=True)
 class WindowStats:
     screen_delta: float
@@ -116,7 +155,7 @@ class WindowStats:
 
 def _inject_css() -> None:
     """Apply a compact executive-clinical skin without adding dependencies."""
-    st.html(
+    _html(
         """
 <style>
 :root {
@@ -632,8 +671,7 @@ h2, h3 {
   }
 }
 </style>
-        """,
-        width="stretch",
+        """
     )
 
 
@@ -1155,11 +1193,10 @@ def _render_error(error: SentinelLLMError) -> None:
     else:
         st.error(f"OpenAI error: {error.original}")
 
-    if st.button(
+    if _stretch_button(
         "Switch to cached mode and rerun",
-        type="primary",
+        type_="primary",
         icon=":material/offline_bolt:",
-        width="stretch",
     ):
         st.session_state["cached"] = True
         st.rerun()
@@ -1174,12 +1211,10 @@ def _run_pipeline(profile: str, use_cache: bool) -> None:
     buffer: list[str] = []
 
     with status_placeholder.container():
-        status_box = st.status(
-            "Agent pipeline starting",
-            expanded=True,
-            state="running",
-            width="stretch",
-        )
+        status_kwargs: dict[str, Any] = {"expanded": True, "state": "running"}
+        if _supports_kw(st.status, "width"):
+            status_kwargs["width"] = "stretch"
+        status_box = st.status("Agent pipeline starting", **status_kwargs)
         timeline_slot = st.empty()
 
     def render_timeline(active: str | None) -> None:
@@ -1250,16 +1285,21 @@ def _run_pipeline(profile: str, use_cache: bool) -> None:
 
 _inject_css()
 
-with st.bottom:
+bottom_surface = st.bottom if hasattr(st, "bottom") else st.container()
+with bottom_surface:
     ctrl_profile, ctrl_cache, ctrl_run, ctrl_meta = st.columns([2.4, 1.05, 1.05, 2.2])
     with ctrl_profile:
+        segmented_kwargs: dict[str, Any] = {
+            "options": list(PROFILE_OPTIONS),
+            "default": st.session_state.get("profile_id", "lucas"),
+            "format_func": lambda key: PROFILE_OPTIONS[key]["short"],
+            "label_visibility": "collapsed",
+        }
+        if _supports_kw(st.segmented_control, "width"):
+            segmented_kwargs["width"] = "stretch"
         selected_profile = st.segmented_control(
             "Case",
-            options=list(PROFILE_OPTIONS),
-            default=st.session_state.get("profile_id", "lucas"),
-            format_func=lambda key: PROFILE_OPTIONS[key]["short"],
-            label_visibility="collapsed",
-            width="stretch",
+            **segmented_kwargs,
         )
         profile_id = selected_profile or "lucas"
         st.session_state["profile_id"] = profile_id
@@ -1271,11 +1311,10 @@ with st.bottom:
         )
         st.session_state["cached"] = cached_toggle
     with ctrl_run:
-        run_clicked = st.button(
+        run_clicked = _stretch_button(
             "Run analysis",
-            type="primary",
+            type_="primary",
             icon=":material/play_arrow:",
-            width="stretch",
         )
     with ctrl_meta:
         elapsed = st.session_state["last_elapsed"]
@@ -1294,12 +1333,7 @@ data_col, reasoning_col = st.columns([1.22, 1.0], gap="large")
 
 with data_col:
     _section_title("Behavioral Metadata", "baseline days 0-13 · decision window days 14-20")
-    st.plotly_chart(
-        _chart_sleep_screen(window, stats),
-        width="stretch",
-        theme=None,
-        config={"displayModeBar": False, "responsive": True},
-    )
+    _plotly_chart(_chart_sleep_screen(window, stats))
     st.markdown(
         f"""
 <div class="chart-caption">
@@ -1310,18 +1344,8 @@ with data_col:
         """,
         unsafe_allow_html=True,
     )
-    st.plotly_chart(
-        _chart_app_sessions(window),
-        width="stretch",
-        theme=None,
-        config={"displayModeBar": False, "responsive": True},
-    )
-    st.plotly_chart(
-        _chart_contacts_heatmap(window, stats.top_contact),
-        width="stretch",
-        theme=None,
-        config={"displayModeBar": False, "responsive": True},
-    )
+    _plotly_chart(_chart_app_sessions(window))
+    _plotly_chart(_chart_contacts_heatmap(window, stats.top_contact))
 
 with reasoning_col:
     _section_title("Agent Reasoning", "Collector → Analyzer → Scorer → Communicator")
