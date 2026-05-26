@@ -39,27 +39,27 @@ st.set_page_config(
     page_title="Sentinel — Teen Digital Safety",
     page_icon="S",
     layout="wide",
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="expanded",
 )
 
 
 PROFILE_OPTIONS = {
     "lucas": {
         "label": "Lucas",
-        "short": "Lucas / grooming",
-        "demo_role": "climax case",
+        "short": "Lucas, 15 — grooming",
+        "demo_role": "grooming risk · ALERT",
         "pattern": "New contact escalation",
     },
     "emma": {
         "label": "Emma",
-        "short": "Emma / normal",
-        "demo_role": "false-positive guardrail",
+        "short": "Emma, 14 — normal",
+        "demo_role": "normal behavior · WATCH",
         "pattern": "Exam-period drift",
     },
     "mia": {
         "label": "Mia",
-        "short": "Mia / harassment",
-        "demo_role": "known-contact pressure",
+        "short": "Mia, 13 — harassment",
+        "demo_role": "harassment risk · MONITOR",
         "pattern": "Known contact surge",
     },
 }
@@ -87,10 +87,10 @@ AGENT_STEPS = {
 }
 
 AGENT_DESCRIPTIONS = {
-    "collector": "Loads the 21-day metadata window",
-    "analyzer": "Detects behavioral signals",
-    "scorer": "Calibrates the 0-1 risk score",
-    "communicator": "Drafts the parent notification",
+    "collector": "Loads 21 days of behavioral metadata — no message content",
+    "analyzer": "Detects risk patterns: grooming, harassment, addiction vs. normal life events",
+    "scorer": "Assigns a risk score from 0.0 (safe) to 1.0 (high risk) with explanation",
+    "communicator": "Drafts a calm, factual alert for the parent — only if score ≥ 0.65",
 }
 
 
@@ -958,9 +958,9 @@ def _render_header(window: MetadataWindow, stats: WindowStats, use_cache: bool) 
   <div class="sentinel-kicker">Sentinel · privacy-by-design digital safety</div>
   <h1>Behavioral risk intelligence, without reading messages.</h1>
   <div class="sentinel-subtitle">
-    A multi-agent pipeline reads 21 days of metadata only: timing, frequency,
-    app drift, sleep signals and contact volume. The demo keeps the jury's eye
-    on the evidence, then lands on the human-in-the-loop decision.
+    A multi-agent AI pipeline analyzes 21 days of behavioral metadata — timing,
+    app usage, sleep, and contact frequency. Zero message content is ever read.
+    Four specialized agents collaborate to detect risk and, when warranted, alert a parent.
   </div>
 </div>
 {_render_case_strip(window, stats, use_cache)}
@@ -1020,10 +1020,11 @@ def _render_agent_timeline(
 def _render_ready_panel() -> str:
     return """
 <div class="empty-card">
-  <div class="transcript-label">Pipeline ready</div>
-  <div style="margin-top:0.75rem;line-height:1.55;">
-    Select a case, choose live API or cached replay, then run the analysis.
-    The right side will show the agent timeline and the communicator transcript.
+  <div class="transcript-label">How to run the demo</div>
+  <div style="margin-top:0.75rem;line-height:1.7;">
+    <strong style="color:#f3efe4;">1.</strong> Pick a profile below (Lucas = grooming risk, Emma = normal, Mia = harassment).<br>
+    <strong style="color:#f3efe4;">2.</strong> Click <strong style="color:#f3efe4;">Run analysis</strong> — the 4 agents will run in sequence.<br>
+    <strong style="color:#f3efe4;">3.</strong> Watch the risk score and, if above 0.65, the parent notification appear live.
   </div>
 </div>
 """
@@ -1051,10 +1052,10 @@ def _render_skip_transcript(score_result: ScoreResult | None) -> str:
     score_text = f"{score_result.score:.2f}" if score_result else "pending"
     return f"""
 <div class="empty-card">
-  <div class="transcript-label">Communicator skipped</div>
+  <div class="transcript-label">No alert sent</div>
   <div style="margin-top:0.75rem;line-height:1.55;">
-    Score {score_text} is at or below the HITL trigger ({HITL_TRIGGER:.2f}).
-    No parent notification is created for this run.
+    Risk score {score_text} is below the human review threshold ({HITL_TRIGGER:.2f}).
+    The agent logs everything but does not contact the parent.
   </div>
 </div>
 """
@@ -1088,9 +1089,9 @@ def _render_no_notification(score_result: ScoreResult | None) -> str:
     <div class="phone-time">9:41</div>
     <div class="phone-date">Monday, May 25</div>
     <div class="no-notification">
-      <strong>No parent notification triggered.</strong><br>
-      Risk score {score} is below the HITL trigger ({HITL_TRIGGER:.2f}).
-      The run remains auditable through the signal ledger and scorer rationale.
+      <strong>No notification sent to parent.</strong><br>
+      Risk score {score} is below the alert threshold ({HITL_TRIGGER:.2f}).
+      All signals are logged and auditable, but no action is taken.
     </div>
   </div>
 </div>
@@ -1124,9 +1125,9 @@ def _render_risk_lens(score_result: ScoreResult | None) -> str:
   </div>
   <div class="risk-labels">
     <span>WATCH &lt;{THRESHOLDS["watch"]:.2f}</span>
-    <span>MONITOR</span>
-    <span>ALERT ≥{THRESHOLDS["monitor"]:.2f}</span>
-    <span>HITL {HITL_TRIGGER:.2f}</span>
+    <span>MONITOR ≥{THRESHOLDS["monitor"]:.2f}</span>
+    <span>ALERT ≥{THRESHOLDS["alert"]:.2f}</span>
+    <span>↑ parent notified above {HITL_TRIGGER:.2f}</span>
   </div>
   <div class="risk-rationale">{_esc(score_result.rationale)}</div>
 </div>
@@ -1285,44 +1286,33 @@ def _run_pipeline(profile: str, use_cache: bool) -> None:
 
 _inject_css()
 
-bottom_surface = st.bottom if hasattr(st, "bottom") else st.container()
-with bottom_surface:
-    ctrl_profile, ctrl_cache, ctrl_run, ctrl_meta = st.columns([2.4, 1.05, 1.05, 2.2])
-    with ctrl_profile:
-        segmented_kwargs: dict[str, Any] = {
-            "options": list(PROFILE_OPTIONS),
-            "default": st.session_state.get("profile_id", "lucas"),
-            "format_func": lambda key: PROFILE_OPTIONS[key]["short"],
-            "label_visibility": "collapsed",
-        }
-        if _supports_kw(st.segmented_control, "width"):
-            segmented_kwargs["width"] = "stretch"
-        selected_profile = st.segmented_control(
-            "Case",
-            **segmented_kwargs,
-        )
-        profile_id = selected_profile or "lucas"
-        st.session_state["profile_id"] = profile_id
-    with ctrl_cache:
-        cached_toggle = st.toggle(
-            "Cached replay",
-            value=st.session_state["cached"],
-            help="Replay saved LLM outputs from disk; useful if quota or network fails.",
-        )
-        st.session_state["cached"] = cached_toggle
-    with ctrl_run:
-        run_clicked = _stretch_button(
-            "Run analysis",
-            type_="primary",
-            icon=":material/play_arrow:",
-        )
-    with ctrl_meta:
-        elapsed = st.session_state["last_elapsed"]
-        elapsed_text = f"{elapsed:.1f}s" if elapsed else "not run"
-        st.caption(
-            f"models: {MODELS['analyzer']} / {MODELS['scorer']} / "
-            f"{MODELS['communicator']} · HITL {HITL_TRIGGER:.2f} · last run {elapsed_text}"
-        )
+with st.sidebar:
+    st.markdown("### Controls")
+    selected_profile = st.radio(
+        "Profile",
+        options=list(PROFILE_OPTIONS),
+        format_func=lambda key: PROFILE_OPTIONS[key]["short"],
+        index=list(PROFILE_OPTIONS).index(st.session_state.get("profile_id", "lucas")),
+    )
+    profile_id = selected_profile or "lucas"
+    st.session_state["profile_id"] = profile_id
+
+    st.divider()
+
+    cached_toggle = st.toggle(
+        "Use saved results",
+        value=st.session_state["cached"],
+        help="Replay previously saved LLM outputs — no API call, instant results. Switch off for a live OpenAI run.",
+    )
+    st.session_state["cached"] = cached_toggle
+
+    st.divider()
+
+    run_clicked = st.button(
+        "▶ Run analysis",
+        type="primary",
+        use_container_width=True,
+    )
 
 
 window = Collector().run(profile_id)
@@ -1332,7 +1322,7 @@ _render_header(window, stats, use_cache=cached_toggle)
 data_col, reasoning_col = st.columns([1.22, 1.0], gap="large")
 
 with data_col:
-    _section_title("Behavioral Metadata", "baseline days 0-13 · decision window days 14-20")
+    _section_title("Behavioral Metadata", "days 0-13 = personal baseline · days 14-20 = analysis window (shaded)")
     _plotly_chart(_chart_sleep_screen(window, stats))
     st.markdown(
         f"""
@@ -1354,11 +1344,11 @@ with reasoning_col:
     status_placeholder.markdown(_render_ready_panel(), unsafe_allow_html=True)
     transcript_placeholder.markdown(_render_transcript(""), unsafe_allow_html=True)
 
-    _section_title("Risk Score", "calibrated by Scorer · HITL threshold shown")
+    _section_title("Risk Score", "0.0 = safe · 1.0 = high risk · parent alerted above 0.65")
     risk_placeholder = st.empty()
     risk_placeholder.markdown(_render_risk_lens(None), unsafe_allow_html=True)
 
-    _section_title("Parent Notification", "generated only above HITL threshold")
+    _section_title("Parent Notification", "generated only when risk score ≥ 0.65")
     notification_placeholder = st.empty()
     notification_placeholder.markdown(_render_no_notification(None), unsafe_allow_html=True)
 
@@ -1412,6 +1402,6 @@ if render_state:
     st.markdown(_render_signal_ledger(analysis), unsafe_allow_html=True)
 
 st.caption(
-    "Sentinel analyzes metadata only: counts, timing, app sessions, sleep and contact-volume "
-    "patterns. It never reads message content."
+    "Privacy guarantee: Sentinel analyzes metadata only — message counts, timing, app sessions, "
+    "sleep patterns, contact frequency. It never reads the content of any message."
 )

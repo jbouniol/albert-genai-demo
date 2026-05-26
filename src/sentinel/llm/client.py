@@ -13,6 +13,7 @@ from __future__ import annotations
 import os
 import time
 from collections.abc import Callable
+from pathlib import Path
 from typing import Any, Literal, TypeVar
 
 import openai
@@ -22,7 +23,12 @@ from pydantic import BaseModel
 from rich.console import Console
 from rich.panel import Panel
 
-load_dotenv()
+# Même méthode que les autres projets du cours : .env partagé à la racine
+# "/Users/jo/Desktop/Intro to GenAI/.env". Fallback sur un .env local si présent.
+_SHARED_ENV = Path("/Users/jo/Desktop/Intro to GenAI/.env")
+if _SHARED_ENV.exists():
+    load_dotenv(_SHARED_ENV)
+load_dotenv(override=False)
 
 _QUIET = os.getenv("SENTINEL_QUIET") == "1"
 _DEFAULT_CONSOLE = Console(quiet=_QUIET)
